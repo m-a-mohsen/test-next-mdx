@@ -1,0 +1,12 @@
+import fs from 'fs'
+import { MDXRemote } from 'next-mdx-remote/rsc'
+ 
+
+export default async function RemoteMdxPage() {
+    // MDX text - can be from a local file, database, CMS, fetch, anywhere...
+    // const res = fs.readFileSync('src/app/mdx-remote/example.md')
+    const res = fs.readFileSync('src/app/mdx-remote/README.md')
+    // const res = await fetch('https://...')
+    const markdown = await res
+    return <MDXRemote source={markdown} />
+}
