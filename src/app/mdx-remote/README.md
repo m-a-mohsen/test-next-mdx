@@ -1,4 +1,4 @@
-# Backend Basics: Chance
+# Backend Basics: Chancee
 
 In this challenge, you will build a server which responds with a random string, using the [npm package `chance`](https://chancejs.com/index.html).
 
